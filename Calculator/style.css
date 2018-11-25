@@ -1,0 +1,102 @@
+.grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(4,5fr);
+    grid-template-areas:
+    "del res res res"
+    "seven eight nine add"
+    "four five six sub"
+    "one two three mul"
+    "zero dot equal div";
+  
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+    grid-gap: 15px;
+    background-color: #251e80;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+body{
+    background: #F6F6F6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+button  {
+    background: rgba(30, 82, 224, 0.5); 
+    border: 1px solid #111;
+    padding: 20px;
+    color: #EEE; 
+    border-radius: 5px; 
+    font-size: 22px; 
+    cursor: pointer; 
+    width: 100%;
+    
+  }
+
+.del{
+    grid-area: del;
+}
+.res{
+    grid-area: res;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: auto;
+    color: wheat;
+}
+.zero{
+    grid-area: zero;
+}
+.nine{
+    grid-area: nine;
+}
+.eight{
+    grid-area: eight;
+}
+.seven{
+    grid-area: seven;
+}
+.six{
+    grid-area: six;
+}
+.five{
+    grid-area: five;
+}
+.four{
+    grid-area: four;
+}
+.three{
+    grid-area: three;
+}
+.two{
+    grid-area: two;
+}
+.one{
+    grid-area: one;
+}
+.equal{
+    grid-area: equal;
+}
+.dot{
+    grid-area: dot;
+}
+.add{
+    grid-area: add;
+}
+.sub{
+    grid-area: sub;
+}
+.mul{
+    grid-area: mul;
+}
+.div{
+    grid-area: div;
+}
