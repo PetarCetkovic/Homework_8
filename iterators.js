@@ -25,7 +25,9 @@ function returnIterator(arr) {
     return inner;
 }
 
-
+function print(){
+  console.log("HelloWorld!");
+}
 
 // CHALLENGE 2
 
